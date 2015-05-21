@@ -67,7 +67,7 @@ namespace NuGet.Configuration
                 if (_defaultPackageSources == null)
                 {
                     _defaultPackageSources = new List<PackageSource>();
-                    IList<SettingValue> disabledPackageSources = _settingsManager.GetSettingValues("disbaledPackageSources");
+                    IList<SettingValue> disabledPackageSources = _settingsManager.GetSettingValues("disabledPackageSources");
                     IList<SettingValue> packageSources = _settingsManager.GetSettingValues("packageSources");
 
                     foreach (var settingValue in packageSources)
